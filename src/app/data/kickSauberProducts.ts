@@ -1,4 +1,3 @@
-// src/data/kickSauberProducts.ts
 
 export type Product = {
     id: number;

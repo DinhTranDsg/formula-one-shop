@@ -21,7 +21,6 @@ export default function ShopYourTeams() {
     return (
         <section className="border-b border-gray-200 bg-white">
             <div className="max-w-6xl mx-auto px-4 py-6">
-                {/* dòng SALE60 */}
                 <p className="mb-4 text-center text-[11px] uppercase tracking-[0.15em] text-gray-600">
                     UP TO 60% OFF SELECTED LINES{" "}
                     <span className="font-semibold">Use code SALE60</span>

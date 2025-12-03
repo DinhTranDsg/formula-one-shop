@@ -1,4 +1,4 @@
-// src/data/haasProducts.ts
+
 export type Product = {
     id: number;
     name: string;

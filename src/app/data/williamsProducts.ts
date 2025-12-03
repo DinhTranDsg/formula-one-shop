@@ -1,12 +1,12 @@
-// src/data/williamsProducts.ts
+
 export type Product = {
     id: number;
     name: string;
     price: string;
     oldPrice?: string;
     note?: string;
-    image: string;      // dùng cho trang list
-    images: string[];   // dùng cho gallery trang chi tiết
+    image: string;
+    images: string[];
 };
 
 export const williamsProducts: Product[] = [

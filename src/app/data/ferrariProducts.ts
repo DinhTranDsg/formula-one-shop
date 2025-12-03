@@ -1,12 +1,12 @@
-// src/data/ferrariProducts.ts
+
 export type Product = {
     id: number;
     name: string;
     price: string;
     oldPrice?: string;
     note?: string;
-    image: string;   // ảnh dùng ở grid
-    images: string[]; // ảnh gallery chi tiết (thêm bớt tuỳ ý)
+    image: string;
+    images: string[];
 };
 
 export const ferrariProducts: Product[] = [

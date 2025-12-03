@@ -1,12 +1,12 @@
-// src/data/astonMartinProducts.ts
+
 export type Product = {
     id: number;
     name: string;
     price: string;
     oldPrice?: string;
     note?: string;
-    image: string;      // ảnh nhỏ dùng trong grid
-    images: string[];   // gallery ảnh lớn chi tiết
+    image: string;
+    images: string[];
 };
 
 export const astonMartinProducts: Product[] = [

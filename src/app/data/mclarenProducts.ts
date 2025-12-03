@@ -1,4 +1,3 @@
-// src/data/mclarenProducts.ts
 
 export type Product = {
     id: number;

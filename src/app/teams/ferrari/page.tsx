@@ -1,4 +1,4 @@
-// src/app/teams/ferrari/page.tsx
+
 "use client";
 
 import Image from "next/image";
@@ -159,7 +159,7 @@ export default function FerrariTeamwearPage() {
             </p>
 
             <div className="mx-auto max-w-[1500px] px-6 pb-12">
-                {/* HERO giống Red Bull/Mercedes */}
+
                 <div className="relative mb-8 bg-black">
                     <Image
                         src="https://f1store.formula1.com/content/ws/all/58db5d4c-57ea-49c7-be3e-2de30b34f0cf__1370X450.png"
@@ -178,7 +178,6 @@ export default function FerrariTeamwearPage() {
                     </div>
                 </div>
 
-                {/* filters + products */}
                 <div className="flex gap-6">
                     <aside className="w-72 shrink-0 text-[13px] text-gray-900">
                         <FilterSection title="Sort By" options={sortOptions} />

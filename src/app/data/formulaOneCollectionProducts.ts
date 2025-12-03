@@ -1,4 +1,4 @@
-// src/data/formulaOneCollectionProducts.ts
+
 
 export type FormulaOneProduct = {
     id: number;
@@ -7,7 +7,7 @@ export type FormulaOneProduct = {
     oldPrice?: string;
     note?: string;
     image: string;
-    images: string[]; // dùng cho gallery
+    images: string[];
 };
 
 export const formulaOneProducts: FormulaOneProduct[] = [

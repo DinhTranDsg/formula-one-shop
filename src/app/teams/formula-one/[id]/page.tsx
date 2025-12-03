@@ -1,4 +1,4 @@
-// src/app/teams/formula-one/[id]/page.tsx
+
 "use client";
 
 import { useState } from "react";
@@ -13,13 +13,12 @@ import ProductGallery from "@/components/product/ProductGallery";
 import SharedProductTabs from "@/components/product/SharedProductTabs";
 
 type PageProps = {
-    params: { id: string }; // ❌ không dùng Promise nữa, trở lại kiểu sync
+    params: { id: string };
 };
 
 const SIZES = ["XS", "S", "M", "L", "XL", "2XL"];
 
 export default function FormulaOneProductDetailPage({ params }: PageProps) {
-    // lấy id trực tiếp, không dùng React.use()
     const idNumber = Number(params.id);
 
     const product = getFormulaOneProductById(idNumber);
@@ -51,14 +50,11 @@ export default function FormulaOneProductDetailPage({ params }: PageProps) {
                     </span>
                 </div>
 
-                {/* layout chính: gallery + info */}
                 <div className="grid grid-cols-[minmax(0,0.6fr)_minmax(0,0.4fr)] gap-12">
-                    {/* Gallery bên trái */}
                     <div>
                         <ProductGallery images={product.images} alt={product.name} />
                     </div>
 
-                    {/* Thông tin bên phải */}
                     <div>
                         <h1 className="text-2xl font-semibold">{product.name}</h1>
                         <p className="mt-1 text-xs text-gray-500">
@@ -79,7 +75,6 @@ export default function FormulaOneProductDetailPage({ params }: PageProps) {
                             )}
                         </div>
 
-                        {/* Chọn size */}
                         <div className="mt-6">
                             <p className="mb-2 text-xs font-semibold uppercase text-gray-700">
                                 Size
@@ -87,7 +82,7 @@ export default function FormulaOneProductDetailPage({ params }: PageProps) {
                             <div className="grid max-w-xs grid-cols-3 gap-2">
                                 {SIZES.map((size) => {
                                     const isSelected = selectedSize === size;
-                                    const isDisabled = size === "XS"; // XS mờ cho giống UI
+                                    const isDisabled = size === "XS";
 
                                     return (
                                         <button
@@ -95,8 +90,8 @@ export default function FormulaOneProductDetailPage({ params }: PageProps) {
                                             type="button"
                                             onClick={() => !isDisabled && setSelectedSize(size)}
                                             className={`border px-8 py-2 text-sm transition ${isDisabled
-                                                    ? "cursor-not-allowed bg-gray-100 text-gray-400"
-                                                    : "cursor-pointer hover:border-black"
+                                                ? "cursor-not-allowed bg-gray-100 text-gray-400"
+                                                : "cursor-pointer hover:border-black"
                                                 } ${isSelected && !isDisabled
                                                     ? "bg-black text-white"
                                                     : "bg-white"
@@ -109,20 +104,16 @@ export default function FormulaOneProductDetailPage({ params }: PageProps) {
                             </div>
                         </div>
 
-                        {/* Nút Add to Cart */}
                         <button
                             type="button"
                             className="mt-6 flex h-11 w-full items-center justify-center bg-black text-sm font-semibold text-white"
                         >
                             ADD TO CART
                         </button>
-
-                        {/* Tabs Description / Details / Shipping */}
                         <SharedProductTabs />
                     </div>
                 </div>
 
-                {/* YOU MAY ALSO LIKE */}
                 <div className="mt-12 border-t border-gray-200 pt-6">
                     <h2 className="mb-4 text-sm font-semibold">
                         You May Also Like

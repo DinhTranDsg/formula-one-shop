@@ -1,4 +1,3 @@
-// src/data/alpineProducts.ts
 
 export type AlpineProduct = {
     id: number;
@@ -6,8 +5,8 @@ export type AlpineProduct = {
     price: string;
     oldPrice?: string;
     note?: string;
-    image: string;      // ảnh dùng ở list
-    images: string[];   // gallery dùng ở trang chi tiết
+    image: string;
+    images: string[];
 };
 
 export const alpineProducts: AlpineProduct[] = [

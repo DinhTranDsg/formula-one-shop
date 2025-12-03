@@ -1,4 +1,4 @@
-// src/app/teams/formula-one/page.tsx
+
 "use client";
 
 import Image from "next/image";
@@ -10,8 +10,6 @@ import {
 } from "@/data/formulaOneCollectionProducts";
 
 type Product = FormulaOneProduct;
-
-// ================== DATA FILTER ==================
 
 const departments = [
     "Accessories",
@@ -131,12 +129,10 @@ function FilterSection({
 }
 
 export default function FormulaOneCollectionPage() {
-    // có thể sau này thêm state filter / sort ở đây
     const products = formulaOneProducts;
 
     return (
         <div className="bg-white">
-            {/* thanh info sale trên cùng */}
             <div className="border-t border-gray-200" />
             <p className="py-2 text-center text-[11px] uppercase tracking-[0.15em] text-gray-700">
                 UP TO 60% OFF SELECTED LINES{" "}
@@ -144,7 +140,6 @@ export default function FormulaOneCollectionPage() {
             </p>
 
             <div className="mx-auto max-w-7xl px-6 pb-14">
-                {/* SORT / HEADER TRÊN CÙNG */}
                 <div className="mb-4 flex items-center justify-between text-xs text-gray-700">
                     <div className="flex items-center gap-6">
                         <div>
@@ -202,7 +197,6 @@ export default function FormulaOneCollectionPage() {
                         />
                     </aside>
 
-                    {/* PRODUCT RIGHT */}
                     <section className="flex-1">
                         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                             {products.map((p) => (

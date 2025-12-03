@@ -1,4 +1,4 @@
-// src/app/components/product/ProductGallery.tsx
+
 "use client";
 
 import Image from "next/image";
@@ -24,7 +24,7 @@ export default function ProductGallery({ images, alt }: ProductGalleryProps) {
 
     return (
         <div className="flex gap-4">
-            {/* thumbnails bên trái */}
+
             <div className="flex flex-col gap-3">
                 {images.map((src: string, i: number) => (
                     <button
@@ -47,7 +47,6 @@ export default function ProductGallery({ images, alt }: ProductGalleryProps) {
                 ))}
             </div>
 
-            {/* ảnh lớn bên phải */}
             <div className="relative flex-1">
                 <div className="bg-white">
                     <Image
@@ -58,8 +57,6 @@ export default function ProductGallery({ images, alt }: ProductGalleryProps) {
                         className="h-[560px] w-full object-contain"
                     />
                 </div>
-
-                {/* mũi tên trái/phải */}
                 <button
                     type="button"
                     onClick={goPrev}

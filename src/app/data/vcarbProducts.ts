@@ -1,4 +1,3 @@
-// src/data/vcarbProducts.ts
 
 export type VcarbProduct = {
     id: number;

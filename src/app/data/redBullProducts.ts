@@ -1,4 +1,4 @@
-// src/data/redBullProducts.ts
+
 export type Product = {
     id: number;
     name: string;

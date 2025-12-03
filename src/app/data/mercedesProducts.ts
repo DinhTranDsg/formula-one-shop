@@ -1,4 +1,3 @@
-// src/app/data/mercedesProducts.ts
 
 export type Product = {
     id: number;
@@ -6,8 +5,8 @@ export type Product = {
     price: string;
     oldPrice?: string;
     note?: string;
-    image: string;      // ảnh dùng cho trang danh sách (team page)
-    images: string[];   // ảnh lớn dùng cho trang chi tiết (gallery)
+    image: string;
+    images: string[];
 };
 
 export const mercedesProducts: Product[] = [
@@ -19,7 +18,6 @@ export const mercedesProducts: Product[] = [
         image:
             "https://images.footballfanatics.com/mercedes-amg-petronas-f1-team/mercedes-amg-petronas-adidas-f1-2025-team-hoodie-black_ss5_p-202359124+u-p29ozrz5c7mpsl0nsiix+v-m7mhdcdj9zsx1lu9i6gi.jpg?_hv=2&w=532",
         images: [
-            // 2 ảnh lớn dùng cho trang chi tiết
             "https://images.footballfanatics.com/mercedes-amg-petronas-f1-team/mercedes-amg-petronas-adidas-f1-2025-team-hoodie-black_ss5_p-202359124+pv-6+u-p29ozrz5c7mpsl0nsiix+v-boln4burmvba2zdgwoet.jpg?_hv=2&w=1018",
             "https://images.footballfanatics.com/mercedes-amg-petronas-f1-team/mercedes-amg-petronas-adidas-f1-2025-team-hoodie-black_ss5_p-202359124+pv-7+u-p29ozrz5c7mpsl0nsiix+v-vzo1jstsysaz76sq6y6p.jpg?_hv=2&w=1018",
             "https://images.footballfanatics.com/mercedes-amg-petronas-f1-team/mercedes-amg-petronas-adidas-f1-2025-team-hoodie-black_ss5_p-202359124+pv-8+u-p29ozrz5c7mpsl0nsiix+v-n4gnqkpdfp7lgnr5z4bt.jpg?_hv=2&w=1018",

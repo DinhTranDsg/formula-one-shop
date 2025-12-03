@@ -5,9 +5,7 @@ export default function Footer() {
 
     return (
         <footer className="mt-8 border-t bg-[#f6f6f6] text-sm text-gray-800">
-            {/* Khối lớn màu xám nhạt */}
             <div className="max-w-7xl mx-auto px-8 py-10 grid grid-cols-1 md:grid-cols-4 gap-10">
-                {/* Customer Service */}
                 <div>
                     <h4 className="mb-3 font-semibold">Customer Service</h4>
                     <ul className="space-y-2 text-sm">
@@ -16,8 +14,6 @@ export default function Footer() {
                         <li><Link href="#">Size Chart</Link></li>
                     </ul>
                 </div>
-
-                {/* Worry Free Shopping */}
                 <div>
                     <h4 className="mb-3 font-semibold">Worry Free Shopping</h4>
                     <ul className="space-y-2 text-sm">
@@ -28,7 +24,6 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                {/* Information */}
                 <div>
                     <h4 className="mb-3 font-semibold">Information</h4>
                     <ul className="space-y-2 text-sm">
@@ -39,7 +34,6 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                {/* Sign up + Follow us */}
                 <div className="flex flex-col gap-4 items-start md:items-end">
                     <div className="text-sm text-gray-700">
                         <p className="mb-3">
@@ -62,11 +56,9 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-
-            {/* Thanh dưới cùng */}
             <div className="border-t bg-white">
                 <div className="max-w-7xl mx-auto px-8 py-4 text-xs text-gray-600 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-                    {/* Links nhỏ */}
+
                     <div className="flex flex-wrap gap-2 md:gap-3">
                         <Link href="#">Privacy Policy</Link>
                         <span>|</span>
@@ -80,8 +72,6 @@ export default function Footer() {
                         <span>|</span>
                         <Link href="#">Product Concerns</Link>
                     </div>
-
-                    {/* Text bản quyền + logo thẻ (làm đơn giản) */}
                     <div className="flex flex-col items-start md:items-end gap-1">
                         <p>
                             © {year}, Fanatics, LLC. and/or its affiliated entities. All

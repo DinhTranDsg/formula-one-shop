@@ -1,4 +1,4 @@
-// src/app/teams/haas/page.tsx
+
 "use client";
 
 import Image from "next/image";
@@ -34,7 +34,6 @@ const genders = ["Men", "Women", "Kids"];
 const collections = ["Hot New Arrivals"];
 const brands = ["LEGO", "New Era"];
 
-// ========== FILTER CHUNG ==========
 function FilterSection({ title, options }: FilterSectionProps) {
     const [open, setOpen] = useState(true);
     const groupName = title.toLowerCase().replace(/\s+/g, "-");
@@ -71,7 +70,6 @@ function FilterSection({ title, options }: FilterSectionProps) {
     );
 }
 
-// ========== COLOUR FILTER ==========
 const colourOptions = [
     { name: "Black", className: "bg-black" },
     { name: "No Color", className: "bg-white" },
@@ -120,14 +118,11 @@ function ColourFilter() {
     );
 }
 
-// ================== PAGE ==================
-
 export default function HaasTeamwearPage() {
     const products: Product[] = haasProducts;
 
     return (
         <div className="bg-white">
-            {/* thanh sale trên cùng */}
             <div className="border-t border-gray-200" />
             <p className="py-2 text-center text-[11px] uppercase tracking-[0.15em] text-gray-700">
                 UP TO 60% OFF SELECTED LINES{" "}
@@ -135,11 +130,8 @@ export default function HaasTeamwearPage() {
             </p>
 
             <div className="mx-auto max-w-[1500px] px-6 pb-12">
-                {/* BODY */}
                 <div className="flex gap-10">
-                    {/* FILTER LEFT */}
                     <aside className="w-72 shrink-0 text-[13px] text-gray-900">
-                        {/* Sort By */}
                         <div className="mb-4 border-b border-gray-200 pb-3">
                             <button
                                 type="button"
@@ -173,7 +165,6 @@ export default function HaasTeamwearPage() {
                         <ColourFilter />
                     </aside>
 
-                    {/* PRODUCTS RIGHT */}
                     <section className="flex-1">
                         <div className="mb-4 flex items-center justify-between text-xs text-gray-700">
                             <div className="flex items-center gap-3">

@@ -1,4 +1,4 @@
-// src/app/teams/kick-sauber/page.tsx
+
 "use client";
 
 import Image from "next/image";
@@ -34,8 +34,6 @@ const collections = ["Hot New Arrivals"];
 const brands = ["LEGO"];
 
 const colours = ["No Color", "Black"];
-
-// helper màu Colour
 function getColourDotClass(value: string): string {
     const v = value.toLowerCase();
     switch (v) {
@@ -48,7 +46,6 @@ function getColourDotClass(value: string): string {
     }
 }
 
-// Filter chung
 function FilterSection({
     title,
     options,
@@ -106,7 +103,6 @@ export default function KickSauberTeamwearPage() {
 
     return (
         <div className="bg-white">
-            {/* dòng sale trên cùng */}
             <div className="border-t border-gray-200" />
             <p className="py-2 text-center text-[11px] uppercase tracking-[0.15em] text-gray-700">
                 UP TO 60% OFF SELECTED LINES{" "}
@@ -114,11 +110,9 @@ export default function KickSauberTeamwearPage() {
             </p>
 
             <div className="mx-auto max-w-[1500px] px-6 pb-12">
-                {/* (Nếu muốn hero banner cho Kick Sauber thì thêm ở đây giống các team khác) */}
 
-                {/* BODY: filter + products */}
                 <div className="flex gap-6">
-                    {/* Filter bên trái */}
+
                     <aside className="w-72 shrink-0 text-[13px] text-gray-900">
                         <FilterSection title="Sort By" options={sortOptions} />
                         <FilterSection title="Drivers" options={drivers} />
@@ -129,7 +123,6 @@ export default function KickSauberTeamwearPage() {
                         <FilterSection title="Colour" options={colours} />
                     </aside>
 
-                    {/* Products bên phải */}
                     <section className="flex-1">
                         <div className="mb-4 flex items-center justify-between text-xs text-gray-700">
                             <div className="flex items-center gap-3">

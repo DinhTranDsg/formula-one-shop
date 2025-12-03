@@ -1,4 +1,4 @@
-// src/app/teams/mclaren/page.tsx
+
 "use client";
 
 import Image from "next/image";
@@ -40,7 +40,6 @@ const collections = ["Hot New Arrivals", "Miami"];
 
 const brands = ["LEGO", "Mitchell & Ness", "New Era", "SunGod"];
 
-// màu cho McLaren – có thể chỉnh lại theo ý sau
 const colours = [
     "Black",
     "No Color",
@@ -154,7 +153,6 @@ function FilterSection({
 export default function McLarenTeamwearPage() {
     return (
         <div className="bg-white">
-            {/* thanh sale trên cùng */}
             <div className="border-t border-gray-200" />
             <p className="py-2 text-center text-[11px] uppercase tracking-[0.15em] text-gray-700">
                 UP TO 60% OFF SELECTED LINES{" "}
@@ -162,7 +160,6 @@ export default function McLarenTeamwearPage() {
             </p>
 
             <div className="mx-auto max-w-[1500px] px-6 pb-12">
-                {/* banner giống Mercedes team nhưng là McLaren */}
                 <div className="relative mb-8 bg-black">
                     <Image
                         src="https://f1store.formula1.com/content/ws/all/dd70f52a-1b43-4111-8748-d5d3b5bb5905__1370X450.png"
@@ -182,7 +179,6 @@ export default function McLarenTeamwearPage() {
                 </div>
 
                 <div className="flex gap-6">
-                    {/* FILTER LEFT – giống Mercedes */}
                     <aside className="w-72 shrink-0 text-[13px] text-gray-900">
                         <FilterSection title="Sort By" options={sortOptions} />
                         <FilterSection title="Drivers" options={drivers} />
@@ -193,7 +189,6 @@ export default function McLarenTeamwearPage() {
                         <FilterSection title="Colour" options={colours} />
                     </aside>
 
-                    {/* PRODUCT GRID RIGHT */}
                     <section className="flex-1">
                         <div className="mb-4 flex items-center justify-between text-xs text-gray-700">
                             <div className="flex items-center gap-3">
