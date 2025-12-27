@@ -6,7 +6,8 @@ import Link from "next/link";
 
 import ProductGallery from "@/components/product/ProductGallery";
 import SharedProductTabs from "@/components/product/SharedProductTabs";
-import productsData, { getProductById, Product } from "@/data/team";
+import productsData, { getProductById, Product } from "@/data/teamdata";
+import { addItemToCart } from "../../../lib/cart";
 
 type PageProps = {
   params: Promise<{ id: string }>;
@@ -20,6 +21,7 @@ export default function VcarbProductDetailPage({ params }: PageProps) {
 
   const product = getProductById(idNumber);
   const [selectedSize, setSelectedSize] = useState<string | null>("M");
+  const [added, setAdded] = useState(false);
 
   if (!product) {
     return (
@@ -101,9 +103,18 @@ export default function VcarbProductDetailPage({ params }: PageProps) {
             {/* add to cart */}
             <button
               type="button"
-              className="mt-6 flex h-11 w-full items-center justify-center bg-black text-sm font-semibold text-white"
+              onClick={() => {
+                addItemToCart({
+                  productId: product.id,
+                  quantity: 1,
+                  size: selectedSize ?? "M",
+                });
+                setAdded(true);
+                setTimeout(() => setAdded(false), 1800);
+              }}
+              className="mt-6 flex h-11 w-full items-center justify-center bg-black text-sm font-semibold text-white hover:cursor-pointer"
             >
-              ADD TO CART
+              {added ? "ADDED ✓" : "ADD TO CART"}
             </button>
 
             <SharedProductTabs />

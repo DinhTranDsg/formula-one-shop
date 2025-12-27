@@ -13,9 +13,9 @@ export default function Header() {
       <div className="w-full bg-gray-50 text-xs text-gray-600 py-2 px-6 flex justify-between">
         <span>SIGN UP & SAVE 15%</span>
         <div className="flex items-center gap-4">
-          <Link href="#">Track Order</Link>
+          <Link href="/track-order">Track Order</Link>
           <Link href="#">Help</Link>
-          <Link href="/account">My Account</Link>
+          <Link href="/login">My Account</Link>
           <span>Language ▾</span>
           <span>GBP £ ▾</span>
           <ShoppingCart className="w-4 h-4 cursor-pointer" />

@@ -1,6 +1,6 @@
 "use client";
 
-import productsData, { Product } from "@/data/team";
+import productsData, { Product } from "@/data/teamdata";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
