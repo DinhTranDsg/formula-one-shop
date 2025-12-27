@@ -2,7 +2,7 @@
 
 import { CartItem } from "@/components/cart-item";
 import { OrderSummary } from "@/components/order-summary";
-import productsData from "@/data/team";
+import productsData from "@/data/teamdata";
 import { useState, useEffect } from "react";
 import { getCart, saveCart } from "../lib/cart";
 

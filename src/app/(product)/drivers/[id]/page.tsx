@@ -7,7 +7,7 @@ import Link from "next/link";
 import ProductGallery from "@/components/product/ProductGallery";
 import SharedProductTabs from "@/components/product/SharedProductTabs";
 import { addItemToCart } from "../../../lib/cart";
-import { Driver, driversData, getProductById } from "@/data/driver";
+import { Driver, driversData, getProductById } from "@/data/driverdata";
 
 type PageProps = {
   params: Promise<{ id: string }>;

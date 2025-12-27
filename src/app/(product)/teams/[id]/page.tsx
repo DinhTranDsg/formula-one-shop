@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import ProductGallery from "@/components/product/ProductGallery";
 import SharedProductTabs from "@/components/product/SharedProductTabs";
-import productsData, { getProductById, Product } from "@/data/team";
+import productsData, { getProductById, Product } from "@/data/teamdata";
 import { addItemToCart } from "../../../lib/cart";
 
 type PageProps = {

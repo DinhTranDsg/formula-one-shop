@@ -1,6 +1,6 @@
 "use client";
 
-import { Driver, driversData } from "@/data/driver";
+import { Driver, driversData } from "@/data/driverdata";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
