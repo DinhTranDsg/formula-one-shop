@@ -4,7 +4,7 @@ export default function Footer() {
     const year = new Date().getFullYear();
 
     return (
-        <footer className="mt-8 border-t bg-[#f6f6f6] text-sm text-gray-800">
+        <footer className="border-t bg-[#f6f6f6] text-sm text-gray-800">
             <div className="max-w-7xl mx-auto px-8 py-10 grid grid-cols-1 md:grid-cols-4 gap-10">
                 <div>
                     <h4 className="mb-3 font-semibold">Customer Service</h4>
