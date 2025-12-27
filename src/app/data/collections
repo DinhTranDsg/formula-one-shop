@@ -1,0 +1,9 @@
+// /data/collections.ts
+export const collections = [
+  { id: "Fanwear", title: "Fanwear", image: "/images/collections/fanwear.jpg", href: "/collections/fanwear" },
+  { id: "jackets", title: "Jackets", image: "/images/collections/jackets.jpg", href: "/collections/jackets" },
+  { id: "ferrari", title: "Ferrari", image: "/images/collections/ferrari.jpg", href: "/collections/ferrari" },
+  { id: "mercedes", title: "Mercedes", image: "/images/collections/mercedes.jpg", href: "/collections/mercedes" },
+  { id: "red-bull", title: "Red Bull", image: "/images/collections/red-bull.jpg", href: "/collections/red-bull" },
+  { id: "headwear", title: "Latest Headwear", image: "/images/collections/headwear.jpg", href: "/collections/headwear" }
+];
