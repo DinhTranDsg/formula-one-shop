@@ -35,7 +35,7 @@ export default function Header() {
               />
             </Link>
             <div className="flex flex-col leading-tight">
-              <span className="text-3xl font-bold">Store</span>{" "}
+              <span className="text-3xl text-black font-bold">Store</span>{" "}
               {/* to chữ hơn */}
               <span className="text-[11px] text-gray-500 mt-0.5">
                 A Fanatics Experience
@@ -44,14 +44,14 @@ export default function Header() {
           </div>
 
           <div className="flex-1 flex justify-center">
-            <div className="flex items-center border rounded-full px-4 py-2 w-full max-w-2xl">
+            <div className="flex items-center text-black border rounded-full px-4 py-2 w-full max-w-2xl">
               <Search className="text-gray-400 mr-2" size={18} />
               <input
                 type="text"
                 placeholder="What can we help you find?"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                className="flex-1 outline-none text-sm"
+                className="flex-1 text-black outline-none text-sm"
               />
             </div>
           </div>
